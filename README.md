@@ -7,12 +7,13 @@ AirAlert es una solución tecnológica diseñada para el monitoreo inteligente y
 ## Equipo de Trabajo
 * **Diana Pareja Cáceres** - Desarrolladora
 * **Eduardo Jesús osorio ramirez** - Desarrollador
+* **Alvarez Leiva, Yefferson ** - Desarrollador
+* **Riva Salinas, Beyonce** - Desarrollador
 
 ---
 
 ## Segmento Objetivo
 La solución digital está orientada a los siguientes perfiles de usuario:
-* Habitantes de Lima Metropolitana expuestos a altos índices de contaminación ambiental y humedad.
 * Pacientes con diagnósticos de condiciones respiratorias crónicas, tales como asma, alergias, EPOC o sensibilidad pulmonar.
 * Cuidadores y familiares que requieran supervisar el entorno ambiental de personas vulnerables para ejecutar medidas preventivas oportunas.
 
