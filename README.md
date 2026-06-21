@@ -7,7 +7,7 @@ AirAlert es una solución tecnológica diseñada para el monitoreo inteligente y
 ## Equipo de Trabajo
 * **Diana Pareja Cáceres** - Desarrolladora
 * **Eduardo Jesús osorio ramirez** - Desarrollador
-* **Alvarez Leiva, Yefferson ** - Desarrollador
+* **Alvarez Leiva, Yefferson** - Desarrollador
 * **Riva Salinas, Beyonce** - Desarrollador
 
 ---
