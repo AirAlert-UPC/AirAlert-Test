@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirAlert - Monitoreo de Calidad del Aire</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+
+<header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <span>AIRALERT</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#funcionamiento">Funcionamiento</a></li>
+                <li><a href="#zonas">Zonas Lima</a></li>
+                <li><a href="#cuidadores">Para Cuidador</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#descargar" class="btn-download">Descargar App</a>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <span class="badge">● MONITOREO EN TIEMPO REAL • LIMA</span>
+            <h1>Respira con <span class="highlight">confianza</span> todos los días.</h1>
+            <p>La primera app diseñada para limeños con problemas respiratorios: asma, bronquitis, EPOC, alergias y sensibilidad pulmonar. Anticípate a la humedad, la neblina y la contaminación de tu distrito.</p>
+            
+            <div class="hero-buttons">
+                <a href="#login" class="btn-primary">Iniciar Sesión</a>
+                <a href="#registro" class="btn-secondary">Registrarse</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/hero-app-mockup.png" alt="AirAlert App Mockup">
+        </div>
+    </section>
+
+    <section class="distritos-section" id="zonas">
+        <h2>Lima distrito por distrito</h2>
+        <p class="section-desc">Datos hiperlocales actualizados cada 15 minutos desde estaciones de monitoreo en toda la ciudad. <span class="update-tag">ACTUALIZADO HACE 2 MIN</span></p>
+        
+        <div class="distritos-grid">
+            <div class="distrito-card">
+                <div class="distrito-header"><span>Miraflores</span><span class="dot dot-green"></span></div>
+                <h3>42</h3>
+                <p>AQI • Buena</p>
+            </div>
+            <div class="distrito-card">
+                <div class="distrito-header"><span>San Isidro</span><span class="dot dot-green"></span></div>
+                <h3>38</h3>
+                <p>AQI • Buena</p>
+            </div>
+            <div class="distrito-card">
+                <div class="distrito-header"><span>Cercado de Lima</span><span class="dot dot-orange"></span></div>
+                <h3>78</h3>
+                <p>AQI • Buena</p>
+            </div>
+            <div class="distrito-card">
+                <div class="distrito-header"><span>S. J. de Lurigancho</span><span class="dot dot-red"></span></div>
+                <h3>112</h3>
+                <p>AQI • Mala</p>
+            </div>
+            <div class="distrito-card">
+                <div class="distrito-header"><span>Ate</span><span class="dot dot-orange"></span></div>
+                <h3>96</h3>
+                <p>AQI • Buena</p>
+            </div>
+            <div class="distrito-card">
+                <div class="distrito-header"><span>Comas</span><span class="dot dot-orange"></span></div>
+                <h3>64</h3>
+                <p>AQI • Buena</p>
+            </div>
+            <div class="distrito-card">
+                <div class="distrito-header"><span>Chorrillos</span><span class="dot dot-green"></span></div>
+                <h3>31</h3>
+                <p>AQI • Buena</p>
+            </div>
+            <div class="distrito-card">
+                <div class="distrito-header"><span>Carabayllo</span><span class="dot dot-red"></span></div>
+                <h3>121</h3>
+                <p>AQI • Mala</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="datos-criticos-section">
+        <h2>Datos críticos para tu salud respiratoria</h2>
+        <p class="section-desc text-center">Analizamos los parámetros específicos de la costa limeña que más afectan a personas con condiciones respiratorias.</p>
+        
+        <div class="criticos-container">
+            <div class="critico-card">
+                <div class="critico-icon icon-blue">%</div>
+                <h3>Humedad crítica</h3>
+                <p>Lima supera el 90% de humedad casi a diario. Te avisamos cuándo encender el deshumidificador o evitar caminar al aire libre.</p>
+            </div>
+            <div class="critico-card">
+                <div class="critico-icon icon-orange">PM</div>
+                <h3>Material particulado</h3>
+                <p>Monitoreo en tiempo real de PM2.5 y PM10 en distritos con alta congestión: SJL, Carabayllo, Cercado, Ate y VMT.</p>
+            </div>
+            <div class="critico-card">
+                <div class="critico-icon icon-green">!</div>
+                <h3>Alertas preventivas</h3>
+                <p>Notificaciones inteligentes antes de que las condiciones empeoren, para que prepares tu inhalador y planifiques el día.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cuidador-section" id="cuidadores">
+
+        <div class="cuidador-grid-container">
+            <div class="perfiles-grid">
+                <div class="perfil-card">
+                    <div class="perfil-card-top">
+                        <img src="./assets/images/user1.jpg" alt="Familiar 1" class="avatar">
+                        <div class="perfil-info">
+                            <h4>Don Carlos</h4>
+                            <p>Surco, Lima</p>
+                        </div>
+                    </div>
+                    <div class="perfil-status">
+                        <div class="status-bar green-active">
+                            <span class="segment green"></span>
+                            <span class="segment yellow"></span>
+                            <span class="segment orange"></span>
+                        </div>
+                        <div class="pulmon-icon text-green">🫁</div>
+                    </div>
+                </div>
+
+                <!-- Familiar 2 -->
+                <div class="perfil-card">
+                    <div class="perfil-card-top">
+                        <img src="./assets/images/user2.jpg" alt="Familiar 2" class="avatar">
+                        <div class="perfil-info">
+                            <h4>Lucia (Hija)</h4>
+                            <p>San Isidro, Lima</p>
+                        </div>
+                    </div>
+                    <div class="perfil-status">
+                        <div class="status-bar yellow-active">
+                            <span class="segment green"></span>
+                            <span class="segment yellow"></span>
+                            <span class="segment orange"></span>
+                        </div>
+                        <div class="pulmon-icon text-yellow">🫁</div>
+                    </div>
+                </div>
+
+                <div class="perfil-card">
+                    <div class="perfil-card-top">
+                        <img src="./assets/images/user3.jpg" alt="Familiar 3" class="avatar">
+                        <div class="perfil-info">
+                            <h4>Dr. Perez</h4>
+                            <p>Miraflores, Lima</p>
+                        </div>
+                    </div>
+                    <div class="perfil-status">
+                        <div class="status-bar green-active">
+                            <span class="segment green"></span>
+                            <span class="segment yellow"></span>
+                            <span class="segment orange"></span>
+                        </div>
+                        <div class="pulmon-icon text-green">🫁</div>
+                    </div>
+                </div>
+                <div class="perfil-card">
+                    <div class="perfil-card-top">
+                        <img src="./assets/images/user4.jpg" alt="Familiar 4" class="avatar">
+                        <div class="perfil-info">
+                            <h4>Elena (Tía)</h4>
+                            <p>Comas, Lima</p>
+                        </div>
+                    </div>
+                    <div class="perfil-status">
+                        <div class="status-bar orange-active">
+                            <span class="segment green"></span>
+                            <span class="segment yellow"></span>
+                            <span class="segment orange"></span>
+                        </div>
+                        <div class="pulmon-icon text-orange">🫁</div>
+                    </div>
+                </div>
+
+                <div class="perfil-card">
+                    <div class="perfil-card-top">
+                        <img src="./assets/images/user5.jpg" alt="Familiar 5" class="avatar">
+                        <div class="perfil-info">
+                            <h4>Hector (Primo)</h4>
+                            <p>Chorrillos, Lima</p>
+                        </div>
+                    </div>
+                    <div class="perfil-status">
+                        <div class="status-bar green-active">
+                            <span class="segment green"></span>
+                            <span class="segment yellow"></span>
+                            <span class="segment orange"></span>
+                        </div>
+                        <div class="pulmon-icon text-green">🫁</div>
+                    </div>
+                </div>
+
+                <div class="perfil-card">
+                    <div class="perfil-card-top">
+                        <img src="./assets/images/user6.jpg" alt="Familiar 6" class="avatar">
+                        <div class="perfil-info">
+                            <h4>Santiago Fernandez</h4>
+                            <p>Carabayllo, Lima</p>
+                        </div>
+                    </div>
+                    <div class="perfil-status">
+                        <div class="status-bar orange-active">
+                            <span class="segment green"></span>
+                            <span class="segment yellow"></span>
+                            <span class="segment orange"></span>
+                        </div>
+                        <div class="pulmon-icon text-orange">🫁</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bloque de contenido de textos (Se mantiene como tu Figma) -->
+        <div class="cuidador-content">
+            <span class="small-title">MODO CUIDADOR</span>
+            <h2>Tranquilidad para toda la familia</h2>
+            <p>Si tracking a una persona mayor, a un niño con asma o bronquitis, a un familiar con EPOC o alguien con alergias respiratorias, AirAlert te permite vincular cuentas y recibir alertas cuando las condiciones de su zona empeoren.</p>
+            <ul>
+                <li>Multi-perfil para todos los familiares a tu cargo</li>
+                <li>Historial de síntomas y factores ambientales</li>
+                <li>Consejos validados por neumólogos</li>
+                <li>Llamada rápida en caso de alerta crítica</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="pasos-section" id="funcionamiento">
+        <h2>Cómo funciona AirAlert</h2>
+        <p class="section-desc text-center">Configurarlo toma menos de dos minutos.</p>
+        
+        <div class="pasos-container">
+            <div class="paso-card">
+                <div class="paso-num">01</div>
+                <h3>Cuéntanos sobre ti</h3>
+                <p>Indica tu condición respiratoria (asma, bronquitis, EPOC, alergias u otras) y los distritos que frecuentas en Lima.</p>
+            </div>
+            <div class="paso-card">
+                <div class="paso-num">02</div>
+                <h3>Recibe alertas a tiempo</h3>
+                <p>Te notificamos cuando la calidad del aire o la humedad puedan afectarte, antes de que salgas.</p>
+            </div>
+            <div class="paso-card">
+                <div class="paso-num">03</div>
+                <h3>Decide con confianza</h3>
+                <p>Recomendaciones claras: salir, postergar o usar mascarilla. Compártelas con tus cuidadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner-section">
+        <div class="cta-box">
+            <h2>Toma el control de cada respiro</h2>
+            <p>Únete a los limeños que ya están mejorando su calidad de vida con AirAlert.</p>
+            <a href="#registro" class="btn-cta-white">Descargar gratis</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="logo white-logo">
+                <div class="logo-icon"></div>
+                <span>AIRALERT</span>
+            </div>
+            <p>© 2026 AirAlert Lima. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,625 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.5;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color:
+    #000000 ;
+    letter-spacing: 0.5px;
+}
+
+.logo-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #3b82f6;
+    border-radius: 6px;
+    position: relative;
+}
+
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 6px;
+    left: 6px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #2563eb;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #333333;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.btn-download {
+    text-decoration: none;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-download:hover {
+    background-color: #333333;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1.2;
+    max-width: 650px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e0f2fe;
+    color: #2563eb;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #111827;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 .highlight {
+    color: #3b82f6;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: #666666;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    text-decoration: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #f9fafb;
+}
+
+.hero-image {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+section {
+    padding: 80px 8%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    color: #666666;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.distritos-section h2 {
+    text-align: left;
+}
+
+.update-tag {
+    float: right;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #9ca3af;
+    margin-top: 5px;
+}
+
+.distritos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.distrito-card {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.distrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9ca3af;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.distrito-card h3 {
+    font-size: 2.2rem;
+    color: #111827;
+    margin: 10px 0 2px 0;
+    font-weight: 600;
+}
+
+.distrito-card p {
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-green { background-color: #10b981; }
+.dot-orange { background-color: #f59e0b; }
+.dot-red { background-color: #ef4444; }
+
+
+.datos-criticos-section {
+    background-color: #ffffff;
+}
+
+.datos-criticos-section h2 {
+    text-align: center;
+}
+
+.criticos-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.critico-card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #f3f4f6;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+}
+
+.critico-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.icon-blue { background-color: #e0f2fe; color: #2563eb; }
+.icon-orange { background-color: #ffedd5; color: #ea580c; }
+.icon-green { background-color: #d1fae5; color: #059669; }
+
+.critico-card h3 {
+    font-size: 1.15rem;
+    color: #111827;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.critico-card p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+
+.cuidador-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: #ffffff;
+}
+
+.cuidador-image {
+    flex: 1;
+}
+
+.cuidador-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cuidador-content {
+    flex: 1;
+}
+
+.small-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #9ca3af;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cuidador-content p {
+    color: #666666;
+    margin: 20px 0;
+}
+
+.cuidador-content ul {
+    list-style: none;
+}
+
+.cuidador-content ul li {
+    font-size: 0.95rem;
+    color: #333333;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.cuidador-content ul li::before {
+    content: "•";
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+
+.pasos-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.paso-card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #f3f4f6;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.paso-num {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.paso-card h3 {
+    font-size: 1.1rem;
+    color: #111827;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.paso-card p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+
+.cta-banner-section {
+    padding: 40px 8%;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cta-box h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-box p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-cta-white {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #2563eb;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-weight: 600;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.btn-cta-white:hover {
+    opacity: 0.95;
+}
+
+footer {
+    padding: 40px 8%;
+    border-top: 1px solid #f0f0f0;
+    background-color: #ffffff;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.white-logo {
+    color: #000000;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+    color: #666666;
+}
+/* ==========================================================================
+   DISEÑO DEL CONTENEDOR MODO CUIDADOR (GRID DE PERFILES DE FAMILIA)
+   ========================================================================== */
+.cuidador-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #ffffff;
+}
+
+.cuidador-grid-container {
+    flex: 1.2;
+    background-color: #f8fafc; /* Fondo grisáceo sutil para resaltar las tarjetas blancas */
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.perfiles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de tarjetas */
+    gap: 20px;
+}
+
+.perfil-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.perfil-card-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+/* Imagen circular para la foto de perfil de cada familiar */
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #cbd5e1; /* Color de respaldo si no hay foto */
+}
+
+.perfil-info h4 {
+    font-size: 0.95rem;
+    color: #111827;
+    font-weight: 600;
+}
+
+.perfil-info p {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin: 0 !important; /* Resetea herencia de estilos anteriores */
+}
+
+/* Barra del semáforo tricolor */
+.perfil-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-bar {
+    display: flex;
+    gap: 4px;
+    flex-grow: 1;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.segment {
+    flex: 1;
+    height: 100%;
+    opacity: 0.2; /* Apagado por defecto */
+}
+
+.segment.green { background-color: #10b981; }
+.segment.yellow { background-color: #f59e0b; }
+.segment.orange { background-color: #ef4444; }
+
+/* Activación dinámica del color de riesgo del familiar según el distrito */
+.green-active .segment.green { opacity: 1; }
+.yellow-active .segment.yellow { opacity: 1; }
+.orange-active .segment.orange { opacity: 1; }
+
+/* Icono del pulmón */
+.pulmon-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.text-green { color: #10b981; }
+.text-yellow { color: #f59e0b; }
+.text-orange { color: #ef4444; }
+
+/* Adaptabilidad para móviles */
+@media (max-width: 768px) {
+    .perfiles-grid {
+        grid-template-columns: 1fr; /* 1 sola columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .criticos-container, .pasos-container, .cuidador-section {
+        flex-direction: column;
+    }
+    .update-tag {
+        float: none;
+        display: block;
+        margin-top: 5px;
+    }
+    nav {
+        display: none; 
+    }
+}
