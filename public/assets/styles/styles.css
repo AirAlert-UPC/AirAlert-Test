@@ -578,9 +578,9 @@ footer p {
 .segment.yellow { background-color: #f59e0b; }
 .segment.orange { background-color: #ef4444; }
 
-.green-active .segment.green { opacity: 1; }
-.yellow-active .segment.yellow { opacity: 1; }
-.orange-active .segment.orange { opacity: 1; }
+.green-active.segment.green { opacity: 1; }
+.yellow-active.segment.yellow { opacity: 1; }
+.orange-active.segment.orange { opacity: 1; }
 
 .pulmon-icon {
     font-size: 1.3rem;
