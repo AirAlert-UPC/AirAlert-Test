@@ -561,8 +561,7 @@ footer p {
 .status-bar {
     display: flex;
     gap: 4px;
-    width: 100%;
-    max-width: 70px;
+    flex-grow: 1;
     height: 12px;
     border-radius: 10px;
     overflow: hidden;
