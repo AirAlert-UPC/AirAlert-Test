@@ -495,9 +495,7 @@ footer p {
 .footer-links a:hover {
     color: #666666;
 }
-/* ==========================================================================
-   DISEÑO DEL CONTENEDOR MODO CUIDADOR (GRID DE PERFILES DE FAMILIA)
-   ========================================================================== */
+
 .cuidador-section {
     display: flex;
     align-items: center;
@@ -507,14 +505,14 @@ footer p {
 
 .cuidador-grid-container {
     flex: 1.2;
-    background-color: #f8fafc; /* Fondo grisáceo sutil para resaltar las tarjetas blancas */
+    background-color: #f8fafc; 
     padding: 30px;
     border-radius: 20px;
 }
 
 .perfiles-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas de tarjetas */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -533,14 +531,12 @@ footer p {
     margin-bottom: 15px;
 }
 
-/* Imagen circular para la foto de perfil de cada familiar */
 .avatar {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #cbd5e1; /* Color de respaldo si no hay foto */
-}
+    background-color: #cbd5e1; 
 
 .perfil-info h4 {
     font-size: 0.95rem;
@@ -551,10 +547,9 @@ footer p {
 .perfil-info p {
     font-size: 0.8rem;
     color: #94a3b8;
-    margin: 0 !important; /* Resetea herencia de estilos anteriores */
+    margin: 0 !important; 
 }
 
-/* Barra del semáforo tricolor */
 .perfil-status {
     display: flex;
     justify-content: space-between;
@@ -574,19 +569,17 @@ footer p {
 .segment {
     flex: 1;
     height: 100%;
-    opacity: 0.2; /* Apagado por defecto */
+    opacity: 0.2; 
 }
 
 .segment.green { background-color: #10b981; }
 .segment.yellow { background-color: #f59e0b; }
 .segment.orange { background-color: #ef4444; }
 
-/* Activación dinámica del color de riesgo del familiar según el distrito */
 .green-active .segment.green { opacity: 1; }
 .yellow-active .segment.yellow { opacity: 1; }
 .orange-active .segment.orange { opacity: 1; }
 
-/* Icono del pulmón */
 .pulmon-icon {
     font-size: 1.3rem;
     line-height: 1;
@@ -596,10 +589,9 @@ footer p {
 .text-yellow { color: #f59e0b; }
 .text-orange { color: #ef4444; }
 
-/* Adaptabilidad para móviles */
 @media (max-width: 768px) {
     .perfiles-grid {
-        grid-template-columns: 1fr; /* 1 sola columna en pantallas pequeñas */
+        grid-template-columns: 1fr; 
     }
 }
 
